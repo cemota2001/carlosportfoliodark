@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Carlos Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/parallax.js">
+
+		var timeout;
+		$('#container').mousemove(function(e){
+		  if(timeout) clearTimeout(timeout);
+		  setTimeout(callParallax.bind(null, e), 200);
+		  
+		});
+
+		function callParallax(e){
+		  parallaxIt(e, '.slide', -100);
+		  parallaxIt(e, 'img', -30);
+		}
+
+		function parallaxIt(e, target, movement){
+		  var $this = $('#container');
+		  var relX = e.pageX - $this.offset().left;
+		  var relY = e.pageY - $this.offset().top;
+		  
+		  TweenMax.to(target, 1, {
+		    x: (relX - $this.width()/2) / $this.width() * movement,
+		    y: (relY - $this.height()/2) / $this.height() * movement,
+		    ease: Power2.easeOut
+		  })
+		}
+	</script>
+
+
+	<script type="text/javascript">
+
+
+
+		function picture0(){ 
+        var pic = "img/infographic/baseline.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+        function picture(){ 
+        var pic = "img/infographic/2016.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+        function picture2(){ 
+        var pic = "img/infographic/2017.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+        function picture3(){ 
+        var pic = "img/infographic/2018.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+        function picture4(){ 
+        var pic = "img/infographic/2018_2.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+        function picture5(){ 
+        var pic = "img/infographic/2019.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+        function picture6(){ 
+        var pic = "img/infographic/2019_2.png"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+
+
+
+    </script>
+
+</head >
+
+<body style="background-color: #1a191c;">
+	<!--================ Começo do cabeçalho =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+							<li class="nav-item"><a class="nav-link" href="#infografico">Infográfico</a></li>
+							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+							<!--<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Páginas</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link">WIP</a></li>
+									<li class="nav-item"><a class="nav-link">WIP</a></li>
+									<li class="nav-item"><a class="nav-link">WIP</a></li>
+								</ul>
+							</li>-->
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="concent">
+		<ul id="scene">
+			<li class="layer" data-depth="0.5"><img id="imgback" src="img/background.png"></li>
+		</ul>
+	</div>
+	<div class="concent2">
+		<ul id="scene2">
+			<li class="layer" data-depth="0.5"><img id="imgback" src="img/background2.png"></li>
+		</ul>
+	</div>
+	<div class="concent3">
+		<ul id="scene3">
+			<li class="layer" data-depth="0.5"><img id="imgback" src="img/background3.png"></li>
+		</ul>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+
+		var scene2 = document.getElementById('scene2');
+		var parallax2 = new Parallax(scene2);
+
+	</script>
+
+
+	<!--================ Fim do cabeçalho =================-->
+
+	<!--================ Início do banner =================-->
+	<section class="home_banner_area">
+		<div id="home" class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3  class="text-uppercase" style="color: #000;">Olá</h3>
+							<h1 class="text-uppercase" style="color: #000;"">Eu sou Carlos Eduardo</h1>
+							<h5 class="text-uppercase" style="color: #000;"">Desenhista, Game Developer & Designer</h5>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div >
+			</div>
+		</div>
+	</section>
+	<!--================ Fim do banner da home =================-->
+
+	<!--================ Começo "Sobre mim" =================-->
+	<section id="about" class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2 >Um Pouco<br>
+							sobre Mim</h2>
+						<p> 
+							Desde criança sempre gostei de desenhar e de usar o computador<br>
+							sempre criava personagens e aprendia cada vez mais a desenhar.
+						</p>
+						<p>
+							Não satisfeito resolvi dar vida aos meus personagens <br>
+							e criar jogos a partir da minha criatividade! <br>
+							Hoje estou feliz com que aprendi e com o que posso continuar aprendendo.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ Fim do "Sobre mim" =================-->
+
+	<!--================ Começo da area de estudo =================-->
+	<section id="contato" class="brand_area section_gap_bottom">
+		<div id="bback" class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo01.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo02.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo03.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo04.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo05.png" alt="">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="bback" class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">  4</span>
+							<span class="smll" style="color: #fff;"> Anos <br>    de <br>estudo</span>
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>Meu Contato!</p>
+								<h3>(21)98850-5398</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ Fim de area de estudo =================-->
+
+	<!--================ Area de conhecimentos e infografico =================-->
+	<section id="infografico" class="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>Meus últimos 4 anos</h2>
+						<p>
+							A imagem abaixo é um infográfico das coisas que passei, aprendi <br> conheci e estudei.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<img class="infographic" id="bigpic" usemap="#infomap" src="img/infographic/baseline.png" alt="infográfico dos ultimos 4 anos">
+				<map name="infomap">
+   					 <area class="mapbut" shape="circle" coords="80,148,15" alt="2016" onmouseenter="picture()" onmouseleave="picture0()">
+   					 <area class="mapbut" shape="circle" coords="213,148,15" alt="2017" onmouseenter="picture2()" onmouseleave="picture0()">
+   					 <area class="mapbut" shape="circle" coords="445,148,15" alt="2018" onmouseenter="picture3()" onmouseleave="picture0()">
+   					 <area class="mapbut" shape="circle" coords="521,148,15" alt="2018 2" onmouseenter="picture4()" onmouseleave="picture0()">
+   					 <area class="mapbut" shape="circle" coords="751,148,15" alt="2019" onmouseenter="picture5()" onmouseleave="picture0()">
+   					 <area class="mapbut" shape="circle" coords="909,148,15" alt="2019 2" onmouseenter="picture6()" onmouseleave="picture0()">
+				</map>
+			</div>
+		</div>
+	</section>
+	<!--================ Fim da area de conhecimentos =================-->
+
+	<!--================Começo do Portfolio =================-->
+	<section class="portfolio_area" id="portfolio">
+		<div id="portfolio" class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Meus trabalhos <br>
+							E projetos terminados recentemente</h2>
+					</div>
+				</div>
+			</div>
+			<div class="filters portfolio-filter">
+				<ul>
+					<li class="active" data-filter="*">todos</li>
+					<li data-filter=".latest"> recentes</li>
+					<li data-filter=".popular">digital</li>
+					<li data-filter=".following">papel</li>
+					<li data-filter=".upcoming">trabalhando</li>
+				</ul>
+			</div>
+			<!--
+			col-lg-4 col-md-6 all popular -digital
+			col-lg-4 col-md-6 all latest -recentes
+			col-lg-4 col-md-6 all following -grafite
+			col-lg-4 col-md-6 all upcoming -trabalhando
+			-->
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img id="imgp" class="img-fluid w-100" src="img/portfolio/1des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/1des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Primeiro desenho</h4>
+								<p>Tucano feito em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/2des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/2des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Treino de Sombreamento</h4>
+								<p>Formas geometrica com sombras<br>
+								feitas em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/3des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/3des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Líquido e vidro</h4>
+								<p>Taça de vinho feita em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/4des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/4des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Textura de Madeira</h4>
+								<p>Balde feito em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/5des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/5des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Pelos</a></h4>
+								<p>Lobo em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/6des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/6des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Penas</h4>
+								<p>Falcão em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/7des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/7des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Elementos Isolados 1</h4>
+								<p>Mãos amarradas em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/8des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/8des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Elementos Isolados 2</h4>
+								<p>Pés feitos em grafite</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/9des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/9des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Elementos Isolados 3</h4>
+								<p>Treino de boca feito em grafite</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/10des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/10des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Treino Rosto Humano</h4>
+								<p>Rosto feito em grafite.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all latest following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/11des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/11des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Rosto Humano</h4>
+								<p>Arnold Schwarzenegger feito em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest upcoming following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/12des.jpeg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/12des.jpeg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Rosto Humano 2</h4>
+								<p>Kratos feito em grafite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/1dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/1dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Primeiro desenho Digital</h4>
+								<p>Gnomo feito no photoshop</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/2dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/2dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Teste de Textura</h4>
+								<p>Desenho digital feito no Photoshop</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/3dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/3dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Penas</h4>
+								<p>Coruja feita no photoshop</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/4dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/4dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Metal</h4>
+								<p>Robô feito no photoshop.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/5dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/5dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Madeira</h4>
+								<p>Ent feito no photoshop.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/6dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/6dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Rosto Humano</h4>
+								<p>Rosto humano feito no photoshop.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/7dig.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/7dig.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Rosto Humano com Liquify</h4>
+								<p>Rosto de um amigo distorcido<br>
+								com o filtro liquify do Photoshop.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/jogo1.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/jogo1.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Projeto Elf INC</h4>
+								<p>Um jogo feito por mim para ser apresentado<br>
+								na feira de ciências da ETERJ.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/jogo2.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/jogo2.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>Projeto Elf INC</h4>
+								<p>Um jogo feito por mim para ser apresentado<br>
+								na feira de ciências da ETERJ.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================Fim do Portfolio =================-->
+
+	<!--================ Cmeço da area de avaliação =================-->
+	<div class="testimonial_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>O que dizem sobre mim?</h2>
+						<p>Pessoas que conheceram meu trabalho</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Isaac Alves</h4>
+									<p>Muito dahora. </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Patrick Barroso</h4>
+									<p>Vai fazer minha tatuagem kkkk. </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t3.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Ivancley</h4>
+									<p>Muito bom jogador! </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			
+        		</div>
+			</div>
+		</div>
+	</div>
+	<!--================ Fim da area de avaliação =================-->
+
+	<!--================ Começo das noticias =================-->
+	<section class="newsletter_area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<h2 class="text-uppercase text-white">Se atualize em qualquer lugar!</h2>
+						<p class="text-white">
+							Use seu e-mail para receber novidades sempre que for atualizado!
+						</p>
+						<div class="subcribe-form" id="mc_embed_signup">
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+								<input name="EMAIL" placeholder="Endereço de E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Endereço de E-mail'" required="" type="email">
+								<div style="position: absolute; left: -5000px;">
+									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+								</div>
+								<button class="primary-btn hover d-inline">Começe</button>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ Fim das noticias =================-->
+
+	<!--================ Rodapé =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+							<h4>Siga-me</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.facebook.com/profile.php?id=100004473662873"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/cemota2001"><i class="fa fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================ Fim do rodapé =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+
+
+
+
+</body>
+
+</html>
