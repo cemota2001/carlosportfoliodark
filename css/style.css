@@ -1454,6 +1454,7 @@ button:focus {
     height: 400px; } }
 .generic-banner .generic-banner-content h2 {
   line-height: 1.2em;
+  color: #fff;
   margin-bottom: 20px; }
 
 @media (max-width: 991.98px) {
@@ -2988,7 +2989,7 @@ h6 {
 
   .navbar .container {
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;}
 
   .nav {
     padding: 0px 0px; }
