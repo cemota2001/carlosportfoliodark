@@ -21,10 +21,18 @@ a{
 .imgp:hover{
  transform: scale(1.1);
 }
+.infographic{
+  min-height: 50px;
+  min-width: 50px;
+  max-height: 100%;
+  max-width: 100%;
+}
 .concent
 {
   width: 120%;
   height: 930vh;
+  min-width: 50%;
+  min-height: 60%;
   overflow: hidden;
   background-attachment: fixed;
   position: absolute;
@@ -36,6 +44,8 @@ a{
 {
   width: 120%;
   height: 140vh;
+    min-width: 50%;
+  min-height: 60%;
   overflow: hidden;
   background-attachment: fixed;
   position: fixed;
@@ -47,6 +57,8 @@ a{
 {
   width: 120%;
   height: 180vh;
+  min-width: 50%;
+  min-height: 60%;
   overflow: hidden;
   background-attachment: fixed;
   position: absolute;
@@ -363,7 +375,7 @@ button:focus {
       display: none; }
   .header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 70px;
-    color: #000000; }
+    color: #000; }
 
 .owl-carousel.off {
   display: -ms-flexbox;
@@ -407,7 +419,7 @@ button:focus {
           position: absolute;
           top: 50%;
           left: 23%;
-          background: #000000; }
+          background: #fff; }
           @media (max-width: 575px) {
             .home_banner_area .banner_inner .banner_content h3:after {
               display: none; } }
