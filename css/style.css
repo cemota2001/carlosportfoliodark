@@ -219,7 +219,13 @@ button:focus {
 
 /* End Gradient Area css
 ============================================================================================ */
+
+.ttable{
+  border-radius: 20%;
+  background-color: #262630;
+}
 .botao {
+  text-shadow: 2px 5px rgba(0,0,0,0.5);
   box-shadow:inset 0px 34px 0px -15px #ffffff;
   background-color:#e0e0e0;
   border:1px solid #fffcff;
@@ -235,6 +241,7 @@ button:focus {
   border-radius: 10%;
 }
 .botao:hover {
+  transform: scale(1.05);
   background-color:#b3b3b3;
 }
 .botao:active {
