@@ -219,6 +219,32 @@ button:focus {
 
 /* End Gradient Area css
 ============================================================================================ */
+.botao {
+  box-shadow:inset 0px 34px 0px -15px #ffffff;
+  background-color:#e0e0e0;
+  border:1px solid #fffcff;
+  display:inline-block;
+  cursor:pointer;
+  color:#d66a42;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #ffb05c;
+  border-radius: 10%;
+}
+.botao:hover {
+  background-color:#b3b3b3;
+}
+.botao:active {
+  position:relative;
+  top:1px;
+}
+
+
+        
+}
 .primary_btn {
   display: inline-block;
   color: #fff;
